@@ -3,7 +3,7 @@ backend:
   branch: main # Branch to update (optional; defaults to master)
 
 # Uncomment for local development
-local_backend: true
+local_backend: false
 
 media_folder: "public/images/uploads" # Media files will be stored here
 public_folder: "/images/uploads" # The src attribute for uploaded media
