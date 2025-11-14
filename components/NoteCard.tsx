@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Note, Category } from '../types';
 
 interface NoteCardProps {
@@ -47,8 +48,10 @@ export const NoteCard: React.FC<NoteCardProps> = ({ note, onImageClick, isActive
         className={`transition-all duration-500 ease-in-out overflow-hidden ${isActive ? 'max-h-[1000px]' : 'max-h-0'}`}
       >
         <div className="px-6 pb-6 pt-0">
-          <p className="mt-2 text-gray-600 leading-relaxed">{note.description}</p>
-          
+          <div className="mt-2 text-gray-600 leading-relaxed prose prose-sm max-w-none">
+            <ReactMarkdown>{note.description}</ReactMarkdown>
+          </div>
+
           {note.imageUrl && (
             <img
               src={note.imageUrl}

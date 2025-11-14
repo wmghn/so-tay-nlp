@@ -39,6 +39,6 @@ description: >-
   * Các nội dung được nhắc lại nhiều buổi (Vòng Tròn Tâm Thức, Mô hình Truyền Thông NLP) **dán ở phía trước lớp**, dễ quan sát.
 
   * **Tránh dán sau cột** hoặc vị trí khuất tầm nhìn
-category: Chuẩn Bị
+category: Hỗ trợ lớp học
 imageUrl: /images/uploads/gemini_generated_image_8bo3z18bo3z18bo3.png
 ---

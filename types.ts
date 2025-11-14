@@ -1,6 +1,6 @@
 export enum Category {
-  PREPARATION = 'Chuẩn Bị',
-  PROCESS = 'Quy Trình',
+  PREPARATION = 'Hỗ trợ lớp học',
+  PROCESS = 'Quy Trình NLP',
 }
 
 export interface Note {
