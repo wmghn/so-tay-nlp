@@ -14,8 +14,7 @@ description: |
 
   ### **2.1. Khi học viên chia sẻ bài học**
 
-  * **Đây là những khoảnh khắc đắt giá nhất → MUST RECORD.**
-  * Quay **đầy đủ**, giữ khung hình ổn định, lấy rõ mặt – rõ tiếng.
+  * **Đây là những khoảnh khắc đắt giá nhất → Cần Quay**
 
   ### **2.2. Khi học viên ôn bài**
 
