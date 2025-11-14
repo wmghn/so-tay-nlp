@@ -19,7 +19,35 @@ const CategoryBadge: React.FC<{ category: Category }> = ({ category }) => {
   );
 };
 
+// Helper function to convert YouTube URL to embed format
+const getYouTubeEmbedUrl = (url: string): string => {
+  if (!url) return '';
+
+  // Already an embed URL
+  if (url.includes('/embed/')) return url;
+
+  // Extract video ID from various YouTube URL formats
+  let videoId = '';
+
+  // Format: https://www.youtube.com/watch?v=VIDEO_ID
+  if (url.includes('watch?v=')) {
+    videoId = url.split('watch?v=')[1]?.split('&')[0];
+  }
+  // Format: https://youtu.be/VIDEO_ID
+  else if (url.includes('youtu.be/')) {
+    videoId = url.split('youtu.be/')[1]?.split('?')[0];
+  }
+  // Format: https://www.youtube.com/v/VIDEO_ID
+  else if (url.includes('/v/')) {
+    videoId = url.split('/v/')[1]?.split('?')[0];
+  }
+
+  return videoId ? `https://www.youtube.com/embed/${videoId}` : url;
+};
+
 export const NoteCard: React.FC<NoteCardProps> = ({ note, onImageClick, isActive, onToggle }) => {
+  const embedUrl = note.videoUrl ? getYouTubeEmbedUrl(note.videoUrl) : '';
+
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-shadow duration-300 ease-in-out hover:shadow-xl">
       <button
@@ -62,16 +90,15 @@ export const NoteCard: React.FC<NoteCardProps> = ({ note, onImageClick, isActive
             />
           )}
 
-          {note.videoUrl && (
+          {embedUrl && (
             <div className="mt-6">
-              <div className="aspect-w-16 aspect-h-9">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src={note.videoUrl}
+                  src={embedUrl}
                   title={note.title}
-                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-full rounded-lg"
+                  className="absolute top-0 left-0 w-full h-full rounded-lg border-0"
                 ></iframe>
               </div>
             </div>

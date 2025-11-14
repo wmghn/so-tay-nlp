@@ -32,4 +32,10 @@ collections:
           required: true
         }
       - {label: "Hình ảnh", name: "imageUrl", widget: "image", required: false}
-      - {label: "Video URL", name: "videoUrl", widget: "string", required: false}
+      - {
+          label: "Video URL",
+          name: "videoUrl",
+          widget: "string",
+          required: false,
+          hint: "YouTube URL (dạng bất kỳ: watch?v=, youtu.be/, hoặc embed/)"
+        }
