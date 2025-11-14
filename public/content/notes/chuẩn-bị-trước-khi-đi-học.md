@@ -16,6 +16,6 @@ description: >-
   5. **Tiền mặt** để mua đồ ăn, vì trong khoá học sẽ **thu điện thoại**.
 
   6. **Áo khoác/áo choàng** để đắp khi nghỉ trưa, tránh bị lạnh.
-category: Hỗ trợ lớp học
+category: Nhắc nhở người giới thiệu
 imageUrl: /images/uploads/img_6081.jpg
 ---
