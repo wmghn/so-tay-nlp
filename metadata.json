@@ -1,0 +1,5 @@
+{
+  "name": "Sổ Tay Phụng Sự NLP",
+  "description": "Một ứng dụng web nhỏ để ghi chú lại những điều học được trong các lớp NLP, bao gồm các phần chuẩn bị và quy trình. Ứng dụng hoạt động ngoại tuyến sau lần tải đầu tiên.",
+  "requestFramePermissions": []
+}

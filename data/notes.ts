@@ -1,0 +1,55 @@
+
+import { Note, Category } from '../types';
+
+export const notes: Note[] = [
+  {
+    // FIX: Changed id from number to string to match the Note type.
+    id: '1',
+    category: Category.PREPARATION,
+    title: 'Kỹ thuật dán Flipchart chuyên nghiệp',
+    description: 'Hướng dẫn cách dán giấy flipchart lên tường một cách nhanh chóng, thẳng và không bị bong tróc. Sử dụng băng keo giấy loại tốt để đảm bảo độ bám dính. Luôn dán 4 góc và các cạnh để giấy không bị cong.',
+    imageUrl: 'https://picsum.photos/seed/flipchart/800/600',
+  },
+  {
+    // FIX: Changed id from number to string to match the Note type.
+    id: '2',
+    category: Category.PREPARATION,
+    title: 'Cách quay phim và chụp ảnh',
+    description: 'Sử dụng chân máy (tripod) để ổn định hình ảnh. Quay video ở chế độ ngang (landscape). Đảm bảo đủ ánh sáng và kiểm tra âm thanh trước khi quay. Chụp ảnh các khoảnh khắc quan trọng và hoạt động của học viên.',
+    imageUrl: 'https://picsum.photos/seed/camera/800/600',
+    videoUrl: 'https://www.youtube.com/embed/g8yB8AMi5e0',
+  },
+  {
+    // FIX: Changed id from number to string to match the Note type.
+    id: '3',
+    category: Category.PROCESS,
+    title: 'Quy trình Neo Cảm Xúc',
+    description: 'Bước 1: Xác định trạng thái cảm xúc tích cực muốn neo. Bước 2: Gợi nhớ lại một trải nghiệm trong quá khứ có cảm xúc đó. Bước 3: Khi cảm xúc lên đỉnh điểm, thực hiện một hành động neo (ví dụ: nắm tay). Bước 4: Lặp lại nhiều lần để củng cố neo. Bước 5: Kiểm tra neo.',
+    imageUrl: 'https://picsum.photos/seed/process/800/600',
+  },
+  {
+    // FIX: Changed id from number to string to match the Note type.
+    id: '4',
+    category: Category.PROCESS,
+    title: 'Quy trình Swish Pattern',
+    description: 'Swish Pattern là một kỹ thuật thay đổi thói quen hoặc phản ứng không mong muốn. Quy trình bao gồm việc xác định hình ảnh kích hoạt thói quen xấu và thay thế nó bằng một hình ảnh bản thân lý tưởng, mạnh mẽ hơn.',
+    imageUrl: 'https://picsum.photos/seed/swish/800/600',
+  },
+  {
+    // FIX: Changed id from number to string to match the Note type.
+    id: '5',
+    category: Category.PREPARATION,
+    title: 'Chuẩn bị phòng học',
+    description: 'Sắp xếp bàn ghế theo sơ đồ phù hợp (chữ U, lớp học). Kiểm tra máy chiếu, âm thanh, ánh sáng. Chuẩn bị sẵn flipchart, bút lông nhiều màu, giấy A4, bút cho học viên. Nước uống và đồ ăn nhẹ cũng cần được chuẩn bị.',
+    imageUrl: 'https://picsum.photos/seed/classroom/800/600',
+  },
+  {
+    // FIX: Changed id from number to string to match the Note type.
+    id: '6',
+    category: Category.PROCESS,
+    title: 'Kỹ thuật Rapport - Tạo thiện cảm',
+    description: 'Rapport là quá trình tạo ra sự kết nối và tin tưởng. Các kỹ thuật bao gồm: Pacing (bắt chước tinh tế ngôn ngữ cơ thể, giọng nói), Matching (sao chép), và Mirroring (phản chiếu). Mục đích là để người khác cảm thấy thoải mái và cởi mở.',
+    imageUrl: 'https://picsum.photos/seed/rapport/800/600',
+    videoUrl: 'https://www.youtube.com/embed/QCyj_dlG_Wc',
+  },
+];

@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Uncomment for local development
+local_backend: true
+
+media_folder: "public/images/uploads" # Media files will be stored here
+public_folder: "/images/uploads" # The src attribute for uploaded media
+
+collections:
+  - name: "notes" # Used in routes, e.g., /admin/collections/notes
+    label: "Ghi Chú" # Used in the UI
+    folder: "public/content/notes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template
+    fields: # The fields for each document
+      - {label: "ID", name: "id", widget: "string", required: true}
+      - {label: "Tiêu đề", name: "title", widget: "string", required: true}
+      - {label: "Mô tả", name: "description", widget: "text", required: true}
+      - {
+          label: "Danh mục",
+          name: "category",
+          widget: "select",
+          options: ["Chuẩn Bị", "Quy Trình"],
+          required: true
+        }
+      - {label: "Hình ảnh", name: "imageUrl", widget: "image", required: false}
+      - {label: "Video URL", name: "videoUrl", widget: "string", required: false}
