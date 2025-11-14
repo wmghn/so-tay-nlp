@@ -73,36 +73,38 @@ export const NoteCard: React.FC<NoteCardProps> = ({ note, onImageClick, isActive
 
       <div
         id={`note-content-${note.id}`}
-        className={`transition-all duration-500 ease-in-out overflow-hidden ${isActive ? 'max-h-[1000px]' : 'max-h-0'}`}
+        className={`transition-all duration-500 ease-in-out overflow-hidden ${isActive ? 'max-h-[2000px]' : 'max-h-0'}`}
       >
         <div className="px-6 pb-6 pt-0">
-          <div className="mt-2 text-gray-600 leading-relaxed prose prose-sm max-w-none">
-            <ReactMarkdown>{note.description}</ReactMarkdown>
-          </div>
-
+          {/* Media section - Image and Video first */}
           {note.imageUrl && (
             <img
               src={note.imageUrl}
               alt={note.title}
-              className="mt-4 w-full h-auto object-cover cursor-pointer rounded-lg shadow-md"
+              className="mt-4 w-full h-auto object-cover cursor-pointer rounded-lg shadow-md hover:shadow-xl transition-shadow"
               onClick={() => onImageClick(note.imageUrl!)}
               loading="lazy"
             />
           )}
 
           {embedUrl && (
-            <div className="mt-6">
+            <div className="mt-4">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   src={embedUrl}
                   title={note.title}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full rounded-lg border-0"
+                  className="absolute top-0 left-0 w-full h-full rounded-lg border-0 shadow-md"
                 ></iframe>
               </div>
             </div>
           )}
+
+          {/* Description with custom markdown styling */}
+          <div className="mt-4 text-gray-700 leading-relaxed markdown-content">
+            <ReactMarkdown>{note.description}</ReactMarkdown>
+          </div>
         </div>
       </div>
     </div>
