@@ -9,8 +9,17 @@
 <body>
   <!-- Include the script that builds the page and powers Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-  
-  <!-- Optional: Include Decap CMS identity widget for authentication -->
+
+  <!-- Netlify Identity Widget for authentication -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+  <!-- Redirect to home page after logout -->
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("logout", () => {
+        document.location.href = "/";
+      });
+    }
+  </script>
 </body>
 </html>
