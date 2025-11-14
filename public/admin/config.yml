@@ -17,7 +17,13 @@ collections:
     fields: # The fields for each document
       - {label: "ID", name: "id", widget: "string", required: true}
       - {label: "Tiêu đề", name: "title", widget: "string", required: true}
-      - {label: "Mô tả", name: "description", widget: "text", required: true}
+      - {
+          label: "Mô tả",
+          name: "description",
+          widget: "markdown",
+          modes: ["rich_text", "raw"],
+          required: true
+        }
       - {
           label: "Danh mục",
           name: "category",
