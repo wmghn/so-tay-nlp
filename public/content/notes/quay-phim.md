@@ -35,5 +35,5 @@ description: |
 
   * Đặt **Zoom: Wide** để thấy toàn cảnh quy trình và học viên tham gia.
 category: Hỗ trợ lớp học
-videoUrl: https://youtu.be/NvngFJo01UA
+videoUrl: https://www.youtube.com/watch?v=NvngFJo01UA
 ---
