@@ -28,7 +28,7 @@ collections:
           label: "Danh mục",
           name: "category",
           widget: "select",
-          options: ["Chuẩn Bị", "Quy Trình"],
+          options: ["Hỗ trợ lớp học", "Quy Trình NLP"],
           required: true
         }
       - {label: "Hình ảnh", name: "imageUrl", widget: "image", required: false}
