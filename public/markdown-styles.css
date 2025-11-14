@@ -3,6 +3,16 @@
   font-size: 1rem;
   line-height: 1.75;
   color: #374151;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+/* Prevent overflow in all children */
+.markdown-content * {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 /* Headings */
@@ -56,6 +66,8 @@
 .markdown-content p {
   margin-bottom: 1rem;
   line-height: 1.75;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-content p:last-child {
@@ -82,6 +94,8 @@
   margin-bottom: 0.5rem;
   line-height: 1.65;
   padding-left: 0.25rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-content li > p {
@@ -115,6 +129,10 @@
   text-decoration: underline;
   font-weight: 500;
   transition: color 0.2s;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  display: inline;
 }
 
 .markdown-content a:hover {
@@ -146,6 +164,8 @@
   border-radius: 0.25rem;
   font-size: 0.875em;
   font-family: 'Courier New', Courier, monospace;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-content pre {
@@ -156,6 +176,7 @@
   overflow-x: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  max-width: 100%;
 }
 
 .markdown-content pre code {
@@ -163,6 +184,8 @@
   color: inherit;
   padding: 0;
   font-size: 0.875rem;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 /* Blockquotes */
@@ -175,6 +198,8 @@
   background-color: #f9fafb;
   padding: 0.75rem 1rem;
   border-radius: 0.25rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-content blockquote p {
@@ -198,6 +223,8 @@
   border-collapse: collapse;
   margin: 1rem 0;
   font-size: 0.875rem;
+  overflow-x: auto;
+  display: block;
 }
 
 .markdown-content th,
@@ -205,6 +232,8 @@
   border: 1px solid #e5e7eb;
   padding: 0.5rem 0.75rem;
   text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .markdown-content th {
@@ -257,5 +286,9 @@
   
   .markdown-content {
     font-size: 0.9375rem;
+  }
+  
+  .markdown-content a {
+    word-break: break-all;
   }
 }

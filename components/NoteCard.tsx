@@ -75,7 +75,7 @@ export const NoteCard: React.FC<NoteCardProps> = ({ note, onImageClick, isActive
         id={`note-content-${note.id}`}
         className={`transition-all duration-500 ease-in-out overflow-hidden ${isActive ? 'max-h-[2000px]' : 'max-h-0'}`}
       >
-        <div className="px-6 pb-6 pt-0">
+        <div className="px-6 pb-6 pt-0 overflow-hidden">
           {/* Media section - Image and Video first */}
           {note.imageUrl && (
             <img
