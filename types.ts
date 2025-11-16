@@ -1,11 +1,12 @@
-export enum Category {
-  PREPARATION = 'Hỗ trợ lớp học',
-  PROCESS = 'Quy Trình NLP',
+export interface Category {
+  name: string;
+  description: string;
+  order: number;
 }
 
 export interface Note {
   id: string;
-  category: Category;
+  category: string;
   title: string;
   description: string;
   imageUrl?: string;

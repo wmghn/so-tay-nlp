@@ -9,6 +9,17 @@ media_folder: "public/images/uploads" # Media files will be stored here
 public_folder: "/images/uploads" # The src attribute for uploaded media
 
 collections:
+  - name: "categories" # Used in routes
+    label: "Danh Mục" # Used in the UI
+    folder: "public/content/categories" # The path to the folder where categories are stored
+    create: true # Allow users to create new categories
+    slug: "{{slug}}" # Filename template
+    identifier_field: name # Use 'name' field as identifier
+    fields:
+      - {label: "Tên danh mục", name: "name", widget: "string", required: true}
+      - {label: "Mô tả", name: "description", widget: "text", required: false}
+      - {label: "Thứ tự hiển thị", name: "order", widget: "number", default: 0, value_type: "int", required: false}
+
   - name: "notes" # Used in routes, e.g., /admin/collections/notes
     label: "Ghi Chú" # Used in the UI
     folder: "public/content/notes" # The path to the folder where the documents are stored
@@ -27,8 +38,11 @@ collections:
       - {
           label: "Danh mục",
           name: "category",
-          widget: "select",
-          options: ["Hỗ trợ lớp học", "Quy Trình NLP", "Nhắc nhở người giới thiệu"],
+          widget: "relation",
+          collection: "categories",
+          search_fields: ["name"],
+          value_field: "name",
+          display_fields: ["name"],
           required: true
         }
       - {label: "Hình ảnh", name: "imageUrl", widget: "image", required: false}

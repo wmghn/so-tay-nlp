@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "Hỗ trợ lớp học",
+      "description": "Các ghi chú hỗ trợ lớp học, setup, kỹ thuật",
+      "order": 1
+    },
+    {
+      "name": "Quy Trình NLP",
+      "description": "Các quy trình NLP và kỹ thuật thực hành",
+      "order": 2
+    },
+    {
+      "name": "Nhắc nhở người giới thiệu",
+      "description": "Các ghi chú về nhắc nhở và hỗ trợ người giới thiệu",
+      "order": 3
+    }
+  ]
+}

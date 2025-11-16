@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Note, Category } from '../types';
+import { Note } from '../types';
 
 interface NoteCardProps {
   note: Note;
@@ -9,9 +9,17 @@ interface NoteCardProps {
   onToggle: () => void;
 }
 
-const CategoryBadge: React.FC<{ category: Category }> = ({ category }) => {
-  const isPreparation = category === Category.PREPARATION;
-  const bgColor = isPreparation ? 'bg-cyan-100 text-cyan-800' : 'bg-indigo-100 text-indigo-800';
+const CategoryBadge: React.FC<{ category: string }> = ({ category }) => {
+  // Map category names to colors
+  const colorMap: Record<string, string> = {
+    'Hỗ trợ lớp học': 'bg-cyan-100 text-cyan-800',
+    'Quy Trình NLP': 'bg-indigo-100 text-indigo-800',
+    'Nhắc nhở người giới thiệu': 'bg-amber-100 text-amber-800',
+  };
+
+  // Default color if category not found
+  const bgColor = colorMap[category] || 'bg-gray-100 text-gray-800';
+
   return (
     <span className={`inline-block px-3 py-1 text-sm font-semibold rounded-full ${bgColor}`}>
       {category}

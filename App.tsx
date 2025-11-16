@@ -6,27 +6,26 @@ import { Category, Note } from './types';
 
 const App: React.FC = () => {
   const [notes, setNotes] = useState<Note[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
   const [zoomedImageUrl, setZoomedImageUrl] = useState<string | null>(null);
   const [activeNoteId, setActiveNoteId] = useState<string | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<Category | 'all'>('all');
+  const [selectedCategory, setSelectedCategory] = useState<string | 'all'>('all');
 
   useEffect(() => {
     setLoading(true);
-    fetch('/data/notes.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
-      .then(data => {
-        setNotes(data.notes); // Assuming the JSON is structured as { "notes": [...] }
+    Promise.all([
+      fetch('/data/notes.json').then(res => res.json()),
+      fetch('/data/categories.json').then(res => res.json())
+    ])
+      .then(([notesData, categoriesData]) => {
+        setNotes(notesData.notes);
+        setCategories(categoriesData.categories);
         setLoading(false);
       })
       .catch(error => {
-        console.error("Error fetching notes: ", error);
+        console.error("Error fetching data: ", error);
         setLoading(false);
       });
   }, []);
@@ -63,11 +62,17 @@ const App: React.FC = () => {
     setActiveNoteId(activeNoteId === noteId ? null : noteId);
   };
 
-  const filterOptions: { label: string, value: Category | 'all' }[] = [
-    { label: 'Tất cả', value: 'all' },
-    { label: Category.PREPARATION, value: Category.PREPARATION },
-    { label: Category.PROCESS, value: Category.PROCESS },
-  ];
+  const filterOptions = useMemo(() => {
+    const options: { label: string, value: string | 'all' }[] = [
+      { label: 'Tất cả', value: 'all' }
+    ];
+
+    categories.forEach(category => {
+      options.push({ label: category.name, value: category.name });
+    });
+
+    return options;
+  }, [categories]);
 
   return (
     <>

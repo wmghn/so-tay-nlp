@@ -15,11 +15,30 @@
       "videoUrl": "https://www.youtube.com/watch?v=NvngFJo01UA"
     },
     {
-      "id": "999",
+      "id": "3",
       "category": "Quy Trình NLP",
-      "title": "Test Markdown Styling",
-      "description": "## Tiêu đề H2 - Kiểm tra styling\n\nĐây là đoạn văn bản thông thường với **chữ đậm** và *chữ nghiêng*.\n\n### Danh sách không thứ tự\n\n* Item đầu tiên\n* Item thứ hai với **bold text**\n* Item thứ ba với *italic text*\n  * Sub-item level 2\n  * Sub-item khác\n    * Sub-item level 3\n\n### Danh sách có thứ tự\n\n1. Bước đầu tiên\n2. Bước thứ hai\n3. Bước thứ ba\n   1. Sub-step 3.1\n   2. Sub-step 3.2\n4. Bước cuối cùng\n\n### Links và Code\n\nXem hướng dẫn tại [Google](https://google.com) hoặc dùng `code inline` như `console.log()`.\n\n### Blockquote\n\n> Đây là một quote quan trọng.\n> Nó có thể nhiều dòng.\n\n### Mixed Content\n\nĐoạn text với **bold**, *italic*, và ***bold italic***.\n\n---\n\nĐây là phần cuối cùng sau horizontal rule.\n",
-      "imageUrl": "https://picsum.photos/seed/test/800/600"
+      "title": "Quy trình 3 vị trí nhận thức (3 Perceptual Positions)",
+      "description": "### **Dùng 3 cái ghế – nhắc học viên trước khi làm quy trình**\n\n1. **Vị trí 1** – Chính mình\n2. **Vị trí 2** – Người còn lại (Người mà Học Viên có cảm xúc không tốt)\n3. **Vị trí 3** – Quan sát viên (bên ngoài, trung lập)\n\n### **Lưu ý quan trọng**\n\n* Nếu học viên **đang không có cảm xúc tốt với ai đó**,\n  → **Vị trí 1 và Vị trí 2 phải đặt đối diện nhau**.\n* Đây là điểm học viên **rất hay đặt sai**, nên phải nhắc kỹ trước khi bắt đầu.\n",
+      "imageUrl": "/images/uploads/ba-vi-tri-nhan-thuc.jpg"
+    },
+    {
+      "id": "4",
+      "category": "Quy Trình NLP",
+      "title": "Ưu Tiên Hỗ Trợ Cô Chú Lớn Tuổi",
+      "description": "CA quan sát và ưu tiên hỗ trợ các cô chú lớn tuổi"
+    },
+    {
+      "id": "7",
+      "category": "Hỗ trợ lớp học",
+      "title": "HƯỚNG DẪN CHẠY MIC",
+      "description": "* Anh chị **chủ động bật mic sẵn** trước khi chuyển cho học viên để tránh gián đoạn bài chia sẻ.\n\n### **2. Mẹo dành cho anh chị chạy mic**\n\n* Nếu anh chị chưa quen thao tác **bật/tắt mic**, hãy **thử trước ngay đầu giờ** để tự tin hơn khi chạy mic.\n* Anh chị nhớ **kiểm tra vạch PIN** trước buổi học và **chủ động sạc đầy**, tránh trường hợp mic tắt giữa chừng.\n"
+    },
+    {
+      "id": "8",
+      "category": "Quy Trình NLP",
+      "title": "Động Viên Học Viên Khi Bối Rối",
+      "description": "* Khi học viên bối rối hoặc khách hàng rất lâu vẫn chưa vào được quy trình, anh chị CA hãy **động viên nhẹ nhàng**, trấn an để họ cảm thấy an toàn và yên tâm tiếp tục.\n* Nhắc học viên về **tâm thế “Yêu thương”** – đây là tâm thế quan trọng nhất khi làm việc với khách hàng.\n* Khuyến khích học viên **kiên trì**, không vội vàng, và tin rằng mỗi lần thực hành là một lần họ tiến bộ.\n",
+      "imageUrl": "/images/uploads/cover-nhung-cau-noi-dong-vien-tinh-than-jpg.webp"
     }
   ]
 }
