@@ -4,7 +4,7 @@ title: Quay Phim
 description: |
   # **HƯỚNG DẪN QUAY PHIM TRONG LỚP HỌC**
 
-  ## **1. Setup máy quay**
+  ## **1. Trước khi quay **
 
   * Vui lòng xem video hướng dẫn setup chi tiết trước khi quay.
 
