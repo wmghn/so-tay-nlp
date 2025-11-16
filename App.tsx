@@ -133,7 +133,7 @@ const App: React.FC = () => {
         </main>
         
         <footer className="text-center py-6 text-gray-500 text-sm">
-          <p>Tạo bởi người phụng sự bằng cả trái tim. <a href="/admin/" className="text-cyan-600 hover:underline">Quản trị</a></p>
+          <p><a href="/admin/" className="text-cyan-600 hover:underline">Quản trị</a></p>
         </footer>
       </div>
       <ImageModal imageUrl={zoomedImageUrl} onClose={handleCloseModal} />
