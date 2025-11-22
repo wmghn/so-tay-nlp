@@ -1,14 +1,12 @@
 ---
 id: "2"
-title: Quay Phim
-description: |
+title: QUAY FILM
+description: |-
   # **HƯỚNG DẪN QUAY PHIM TRONG LỚP HỌC**
 
-  ## **1. Trước khi quay **
+  ## **1. Trước khi quay** 
 
   * Vui lòng xem video hướng dẫn setup chi tiết trước khi quay.
-
-  ---
 
   ## **2. Các lưu ý quan trọng khi quay**
 
@@ -33,6 +31,8 @@ description: |
   ### **2.5. Khi Thầy làm quy trình**
 
   * Đặt **Zoom: Wide** để thấy toàn cảnh quy trình và học viên tham gia.
+
+  ### **2.6. Ngày thứ 6 - Thiền Động - đầu giờ khi Thầy hướng dẫn vẫn quay**
 category: Hỗ trợ lớp học
 videoUrl: https://www.youtube.com/watch?v=NvngFJo01UA
 ---
