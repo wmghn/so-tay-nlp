@@ -1,6 +1,6 @@
 ---
 id: "3"
-title: Quy Trình 3 Vị Trí Nhận Thức (3 Perceptual Positions)
+title: QUY TRÌNH 3 VỊ TRÍ NHẬN THỨC
 description: >
   ### **Dùng 3 cái ghế – nhắc học viên trước khi làm quy trình**
 
