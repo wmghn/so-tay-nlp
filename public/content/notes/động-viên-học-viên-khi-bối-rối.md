@@ -1,6 +1,6 @@
 ---
 id: "8"
-title: Động Viên Học Viên Khi Bối Rối
+title: KHI HỌC VIÊN BỐI RỐI
 description: >
   * Khi học viên bối rối hoặc khách hàng rất lâu vẫn chưa vào được quy trình,
   anh chị CA hãy **động viên nhẹ nhàng**, trấn an để họ cảm thấy an toàn và yên
