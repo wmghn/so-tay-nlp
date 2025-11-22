@@ -1,6 +1,6 @@
 ---
 id: "1"
-title: Chuẩn Bị Trước Khi Đi Học
+title: NHẮC HỌC VIÊN CHUẨN BỊ TRƯỚC KHI ĐI HỌC
 description: >-
   ## **Lưu ý chuẩn bị trước khi đi học**
 
