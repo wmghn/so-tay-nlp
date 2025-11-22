@@ -1,6 +1,6 @@
 ---
 id: "1"
-title: Dán Flipchart Cuối Ngày
+title: DÁN FLIPCHART CUỐI NGÀY
 description: >-
   ## **HƯỚNG DẪN DÁN FLIPCHART**
 
