@@ -27,6 +27,9 @@ description: >-
   * Nhắc học viên về **tâm thế “Yêu thương”** – đây là tâm thế quan trọng nhất khi làm việc với khách hàng.
 
   * Khuyến khích học viên **kiên trì**, không vội vàng, và tin rằng mỗi lần thực hành là một lần họ tiến bộ.
+
+
+  #### CA quan sát các lớp học và ưu tiên hỗ trợ các cô chú lớn tuổi
 category: Quy Trình NLP
 imageUrl: /images/uploads/cover-nhung-cau-noi-dong-vien-tinh-than-jpg.webp
 ---
